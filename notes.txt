@@ -1,0 +1,18 @@
+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
+sam init --runtime python3.8
+sam local start-api --region us-east-1
+
+sam package \
+--template-file template.yaml \
+--output-template-file packaged.yaml \
+--s3-bucket codepipeline-settyms-devops \
+--profile dsi_admin
+
+
+sam deploy --template-file /Users/suri.deepu/devops/SAM/sam-exaple-12/packaged.yaml --stack-name <YOUR STACK NAME>
+
+
+sam publish \
+--template packaged.yaml \
+--region us-east-1 \
+--profile dsi_admin

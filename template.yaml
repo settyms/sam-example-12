@@ -9,6 +9,18 @@ Description: >
 Globals:
   Function:
     Timeout: 3
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: sam-exaple-12
+    Description: hello world
+    Author: settyms
+    SpdxLicenseId: Apache-2.0
+    LicenseUrl: LICENSE.txt
+    ReadmeUrl: README.md
+    Labels: ['tests']
+    HomePageUrl: https://github.com/settyms/sam-example-12
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://github.com/settyms/sam-example-12
 
 Resources:
   HelloWorldFunction:
