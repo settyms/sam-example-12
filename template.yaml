@@ -12,7 +12,7 @@ Globals:
 Metadata:
   AWS::ServerlessRepo::Application:
     Name: sam-exaple-12
-    Description: hello world
+    Description: hello world this i super
     Author: settyms
     SpdxLicenseId: Apache-2.0
     LicenseUrl: LICENSE.txt
